@@ -1,0 +1,98 @@
+body {
+    background-color: hsl(170, 100%, 50%);
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+th {
+    padding-right: 20px;
+}
+
+tr {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+tr:hover {
+    background-color: hsl(0, 0%, 80%);
+    cursor: pointer;
+}
+
+tr:active {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.selected {
+    background-color: hsl(170, 100%, 80%);
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    padding: 0 20 px;
+}
+
+#left_container {
+    margin-right: auto;
+}
+
+#center-container {
+    margin: 0 auto;
+}
+
+#right-container {
+    margin-left: auto;
+}
+
+#robot-form {
+    height: 400px;
+    width: 200px;
+
+    display: none;
+    position: fixed;
+    cursor: move;
+
+    background-color: hsl(271, 100%, 71%);
+    border: solid 2px hsl(0, 0%, 0%);
+    padding: 5px;
+}
+
+#save-response {
+    display: none;
+}
+
+#robot-arena {
+    height: 100px;
+    width: 100px;
+
+    display: none;
+
+    background-color: hsl(271, 100%, 71%);
+    border: solid 2px hsl(0, 0%, 0%);
+    padding: 5px;
+}
+
+#table-wrapper {
+    max-height: 200px;
+    max-width: 200px;
+    overflow: scroll;
+    border: solid 5px black;
+}
+
+#table-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+#table-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(194, 255, 52);
+    border-radius: 4px;
+}
+
+#table-wrapper::-webkit-scrollbar-track {
+    background-color: hsl(244, 100%, 71%);
+}
